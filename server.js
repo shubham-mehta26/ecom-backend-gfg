@@ -1,9 +1,10 @@
 const express = require('express');
 const products = require('./db/products')
-
+const cors = require('cors');
 // creating a server
 
 const app = express();
+app.use(cors()); // cross origin resourse sharing
 
 app.get('/',(req,res)=>{
     res.send('Hello from express App!!!');
