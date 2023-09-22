@@ -17,7 +17,7 @@ app.get("/api/products",(req,res)=>{
     res.status(200).json(products);
 })
 
-app.get("/api/auth/login",(req,res)=>{
+app.post("/api/auth/login",(req,res)=>{
     console.log(req);
 })
 app.listen(3000,()=>{
